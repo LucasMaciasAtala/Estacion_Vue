@@ -1,4 +1,4 @@
-# estacio-vue
+# estacion-vue
 
 ## Project setup
 ```
