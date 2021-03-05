@@ -1,25 +1,42 @@
 <template>
-  <div>
-      <!-- <b-collapse id="nav-text-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-text>Navbar text</b-nav-text>
-      </b-navbar-nav> -->
-    <!-- </b-collapse> -->
+  <div class="container-fluid pl-0">
     <div class="footer">
-    <b-navbar toggleable="lg" type="dark" variant="info" fixed="bottom">        
-        <b-nav-text>
-          Estacion de Servicio Francisco Macias - Todos los reservados derechos
-        </b-nav-text>      
-    </b-navbar>
+      <p class="footerText">
+        @ {{ new Date().getFullYear() }} Estacion de Servicio Francisco Macias -
+        Todos los reservados derechos
+      </p>
     </div>
   </div>
 </template>
 
 <style scoped>
-@media screen and (max-width: 1024px) {	
-	.footer {
-		display:none;
-	}
-	
+.footer {
+  position: fixed;
+  bottom: 0;  
+  width: 100%;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  background-color: rgba(8, 61, 111, 0.994);
+}
+
+.footerText {
+   animation: showup 8s ;
+   color: white;
+}
+
+@keyframes showup {
+  from{
+    margin-left:-800px;
+  }
+  to {
+    margin-left:0px;
+  }
+ 
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: none;
+  }
 }
 </style>
