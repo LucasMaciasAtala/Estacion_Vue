@@ -2,17 +2,16 @@
   <div class="container-fluid pl-0 pr-0">
     <carousel
       :per-page="1"
-      :mouse-drag="true"
-      :autoplay="false"
-      :autoplayTimeout="6000"
+      :mouse-drag="false"
+      :autoplay="true"
+      :autoplayTimeout="5500"
       :loop="true"
       :centerMode="true"
-      :paginationEnabled="false"
+      :paginationEnabled="true"
       class="carouselBox"
     >
       <slide v-for="image in Images" :key="image.name">
-        <!-- <p class="container text">{{ image.text }}</p> -->
-        <slide-text :text=image.text></slide-text>
+       <slide-text :text=image.text></slide-text>
         <img
           :src="image.src"
           style="height: 80vh; width: 100%"
@@ -45,7 +44,7 @@ export default {
           name: "image1",
           src: require("../../public/images/img1.png"),
           text:
-            "Estación de Servicio Macias.\n Brindándole desde siempre la mejor atención",
+            "Estación de Servicio Macias\n Brindándole desde siempre la mejor atención",
         },
         {
           name: "image2",
@@ -74,6 +73,3 @@ export default {
 
 </style>
 
-
-Todo: Ajustar fotos de carousel (Ver como se ajusta el tamaño)
-      Agregar productos y stock sin columnas. buscar forma animada

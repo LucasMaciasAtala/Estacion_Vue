@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid">
+<div>
    <svg
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -26,9 +26,9 @@
         <text
           id="text"
           transform="translate(2,116)"
-          font-size="161"
+          font-size="120"
         >
-        {{ message }}
+        {{ text }}
         </text>
 
         <mask id="text-mask">
@@ -123,13 +123,8 @@
 <script>
 export default {
   props: {
-    message: String
-  },
-  data() {
-    return {
-      messageText: this.message
-
-    }
-  },
+    text: String
+  }
 }
 </script>
+
