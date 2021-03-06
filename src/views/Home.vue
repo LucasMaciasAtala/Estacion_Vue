@@ -3,7 +3,7 @@
     <carousel
       :per-page="1"
       :mouse-drag="true"
-      :autoplay="true"
+      :autoplay="false"
       :autoplayTimeout="6000"
       :loop="true"
       :centerMode="true"
@@ -11,20 +11,15 @@
       class="carouselBox"
     >
       <slide v-for="image in Images" :key="image.name">
+        <!-- <p class="container text">{{ image.text }}</p> -->
+        <slide-text :text=image.text></slide-text>
         <img
           :src="image.src"
           style="height: 80vh; width: 100%"
           alt="Background Image"
         />
-        <div style="display: absolute;">
-          <p class="text"> <slide-text :text=image.text></slide-text>
-</p>
-          <!-- Q aparezca mas fachero el texto    -->
-        </div>
       </slide>
     </carousel>
-         
-   
 
     <stock-table class="stockTable"></stock-table>
   </div>
@@ -33,7 +28,7 @@
 <script>
 import { Carousel, Slide } from "vue-carousel";
 import StockTable from "../components/StockTable.vue";
-import SlideText from "../components/SlideText.vue";
+import SlideText from "../components/SlideText.vue"
 
 export default {
   name: "Home",
@@ -41,7 +36,7 @@ export default {
     StockTable,
     Carousel,
     Slide,
-    SlideText,
+    SlideText
   },
   data() {
     return {
@@ -70,24 +65,13 @@ export default {
 </script>
 
 <style scoped>
+
 .carouselBox {
   max-width: 100%;
   min-height: 100%;
   height: 80vh;
 }
 
-/* .stockTable {
-    position: relative;
-  } */
-
-.text {
-  position: absolute;
-  font-size: 150%;
-  padding: 8px 12px;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 </style>
 
 

@@ -1,7 +1,7 @@
 <template>
   
 <div >
-  <iframe class="info" src='https://www.infobae.com?iframe=true'></iframe>
+  <iframe class="info" src='https://www.infobae.com?/404/iframe=true'></iframe>
 </div>
   
 </template>
