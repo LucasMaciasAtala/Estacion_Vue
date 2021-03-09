@@ -1,6 +1,6 @@
 <template>
   
-<div >
+<div class="container">
   <iframe class="info" src='https://www.infobae.com?/404/iframe=true'></iframe>
 </div>
   
