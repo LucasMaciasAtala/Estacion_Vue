@@ -2,13 +2,20 @@
   <div class="container-fluid pl-0">
     <div class="footer">
       <p class="footerText">
-        @ {{ new Date().getFullYear() }} Estacion de Servicio Francisco Macias -
-        Todos los reservados derechos
+        @ {{ new Date().getFullYear() }} {{ text }}
       </p>
     </div>
   </div>
 </template>
-
+\<script>
+export default {
+  data() {
+    return {
+      text: 'Estacion de Servicio Francisco Macias - Todos los derechos reservados'
+    }
+  }
+}
+</script>
 <style scoped>
 .footer {
   position: fixed;

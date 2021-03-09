@@ -2,8 +2,8 @@
   <div class="container-fluid pl-0 pr-0">
     <carousel
       :per-page="1"
-      :mouse-drag="false"
-      :autoplay="true"
+      :mouse-drag="true"
+      :autoplay="false"
       :autoplayTimeout="5500"
       :loop="true"
       :centerMode="true"
@@ -42,20 +42,20 @@ export default {
       Images: [
         {
           name: "image1",
-          src: require("../../public/images/img1.png"),
+          src: require("../../public/images/img1b.png"),
           text:
             "Estación de Servicio Macias\n Brindándole desde siempre la mejor atención",
         },
         {
           name: "image2",
-          src: require("../../public/images/img2.png"),
-          text: "Contamos con los certificados de Calidad X e Y",
+          src: require("../../public/images/img2b.png"),
+          text: "Contamos con Certificados de Calidad e Hidrocarburos",
         },
         {
           name: "image3",
-          src: require("../../public/images/img3.jpg"),
+          src: require("../../public/images/img3_zeke.jpg"),
           text:
-            "Desde hace mas de 80 años sobreviviendo en este país de mierda",
+            "80 años y 3 generaciones garantizan el mejor servicio",
         },
       ],
     };

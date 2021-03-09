@@ -44,7 +44,7 @@ export default {
         },
         {
           name: "Hielo",
-          stock: false,
+          stock: true,
         },
       ],
     };

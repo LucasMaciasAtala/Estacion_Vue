@@ -49,9 +49,9 @@ export default {
 </script>
 
 <style scoped>
-a {
-  color: rgb(56, 51, 60);
-  font-size:  2vh 1vw;
+
+a:hover {
+  text-shadow: 2px 2px 4px #FFFFFF !important;
 }
 
 .body-contact {
@@ -67,6 +67,11 @@ a {
 
 .text {
   text-align: center;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 1em;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .gmap_canvas {
@@ -107,5 +112,3 @@ a {
 }
 } 
 </style>
-
-//Todo: Agregar Flow Text. (Renderizar en menor tamaño)
