@@ -31,11 +31,11 @@ export default {
           stock: true,
         },
         {
-          name: "Diesel",
+          name: "Ultra Diesel",
           stock: true,
         },
         {
-          name: "Euro Diesel",
+          name: "Infinia Diesel",
           stock: true,
         },
         {

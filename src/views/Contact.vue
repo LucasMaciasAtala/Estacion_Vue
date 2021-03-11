@@ -41,7 +41,7 @@ export default {
       OpenHourText: "Horario de Atención: ",
       PhoneText: "LLamanos al Teléfono: ",
       Email: "marcelomaciasep@gmail.com",
-      OpenHour: "9 a 23 hs",
+      OpenHour: "8 a 23 hs",
       Phone: "(0358) 4960327",
     };
   },
