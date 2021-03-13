@@ -1,2 +1,2 @@
-web: npm run build
+web: npm run serve
 local: npm run serve
