@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="light" class="topbar" toggle-class="text-dark">
+    <b-navbar toggleable="lg" type="dark" class="topbar" toggle-class="text-dark">
       <b-navbar-brand to="/">Inicio</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 .topbar {
-  background-image: linear-gradient(to left, rgba(255,0,0,0), #1f567c);
+  background-image: linear-gradient(to left, rgba(73, 86, 128, 0.7), #1f567c);
 }
 
 #nav-collapse {
