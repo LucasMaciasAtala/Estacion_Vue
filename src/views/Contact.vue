@@ -70,8 +70,8 @@ a:hover {
   font-size: 2em;
   text-align: center;
   padding-bottom: 1em;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  color: rgb(20, 71, 146);
+  text-shadow: 1px 1px 4px #0000009f;
 }
 
 .gmap_canvas {
