@@ -6,17 +6,18 @@
       :autoplay="false"
       :autoplayTimeout="5500"
       :loop="true"
-      :centerMode="true"
       :paginationEnabled="true"
       class="carouselBox"
     >
-      <slide v-for="image in Images" :key="image.name">
+      <slide v-for="image in Images" :key="image.name" >
+        
        <slide-text :text=image.text></slide-text>
         <img
           :src="image.src"
-          style="height: 80vh; width: 100%"
+          style="height: 85vh; width: 100%; max-height: 80vw;"
           alt="Background Image"
         />
+      
       </slide>
     </carousel>
 
@@ -42,13 +43,13 @@ export default {
       Images: [
         {
           name: "image1",
-          src: require("../../public/images/img1b.png"),
+          src: require("../../public/images/img1c.png"),
           text:
             "Estación de Servicio Macias\n Brindándole desde siempre la mejor atención",
         },
         {
           name: "image2",
-          src: require("../../public/images/img2b.png"),
+          src: require("../../public/images/img2b.jpg"),
           text: "Contamos con Certificados de Calidad e Hidrocarburos",
         },
         {
@@ -68,7 +69,7 @@ export default {
 .carouselBox {
   max-width: 100%;
   min-height: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 
 </style>
